@@ -92,6 +92,7 @@ export function renderHome() {
   root.append(h('p', { class: 'muted' }, h('a', { href: '#/settings' }, 'Backup and restore')));
   const ic = installCard();
   if (ic) root.append(ic);
+  root.append(h('p', { class: 'muted credit' }, 'Built by Phuong Le with Claude'));
   mount(root);
 }
 
