@@ -35,7 +35,7 @@ export function renderHome() {
     const pickStep = steps.find((x) => x.step.kind === 'due') || steps[0];
     const more = steps.length - 1;
     hero.append(
-      h('p', null, `${pickStep.step.text} in ${pickStep.list.name}`),
+      h('p', null, `${pickStep.step.text} in `, ...(pickStep.list.isSample ? [h('strong', null, 'Hiragana'), ' (the basic Japanese alphabet: one character per sound, like か = "ka") sample'] : [pickStep.list.name])),
       h('button', { class: 'btn big', 'data-autofocus': true, onclick: () => {
         if (pickStep.step.run()) { save(); go('#/round'); } else go(`#/list/${pickStep.list.id}`);
       } }, 'Start looping'),
