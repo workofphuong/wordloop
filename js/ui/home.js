@@ -81,10 +81,6 @@ export function renderHome() {
   lists.append(h('div', { class: 'list-actions row' }, createListButton(),
     ...(practiceList ? [h('a', { class: 'btn', href: `#/practice/${practiceList.id}` }, 'Extra practice')] : [])));
   root.append(lists);
-  // The sample is hiragana, so say what that is for first-time users.
-  if (state.lists.some((l) => l.isSample)) {
-    root.append(h('p', { class: 'sample-note' }, h('strong', null, 'Hiragana'), ' is the basic Japanese alphabet. Each character is one syllable, like か = "ka".'));
-  }
 
   const s = state.settings;
   if (s.backupOptIn === true && backupNeeded()) {
