@@ -1,5 +1,5 @@
 {
-  "name": "Wordloop - word trainer",
+  "name": "Wordloop",
   "short_name": "Wordloop",
   "description": "Spaced loops and active recall for words.",
   "start_url": "./index.html",
