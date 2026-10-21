@@ -6,6 +6,7 @@ import { renderList } from './ui/list.js';
 import { renderExamples } from './ui/examples.js';
 import { renderPractice } from './ui/practice.js';
 import { renderSettings } from './ui/settings.js';
+import { renderBlog } from './ui/blog.js';
 import { initPwa } from './pwa.js';
 import { getState, storageError } from './store.js';
 
@@ -21,6 +22,7 @@ function route() {
     case 'list': return renderList(arg);
     case 'practice': return renderPractice(arg);
     case 'settings': return renderSettings();
+    case 'blog': return renderBlog();
     default: return renderHome();
   }
 }

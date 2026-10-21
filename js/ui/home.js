@@ -89,7 +89,7 @@ export function renderHome() {
       h('button', { class: 'btn small', onclick: () => { downloadBackup(); renderHome(); } }, 'Download backup')));
   }
 
-  root.append(h('p', { class: 'muted' }, h('a', { href: '#/settings' }, 'Backup and restore')));
+  root.append(h('p', { class: 'muted' }, h('a', { href: '#/settings' }, 'Backup and restore'), ' \u00B7 ', h('a', { href: '#/blog' }, 'How I built Wordloop')));
   const ic = installCard();
   if (ic) root.append(ic);
   root.append(h('p', { class: 'muted credit' }, 'Built by Phuong Le with Claude'));

@@ -1,5 +1,5 @@
 // Offline cache. Bump VERSION when files are added or removed (it refreshes the precache list).
-const VERSION = 'v7';
+const VERSION = 'v8';
 const CACHE = 'revisit-' + VERSION;
 const FILES = [
   './', './index.html', './manifest.webmanifest', './css/app.css',
@@ -9,7 +9,8 @@ const FILES = [
   './js/checker.js', './js/romaji.js', './js/sample.js', './js/exercises.js', './js/engine.js',
   './js/session.js', './js/backup.js', './js/pwa.js', './js/llm-slot.js',
   './js/ui/dom.js', './js/ui/home.js', './js/ui/list.js', './js/ui/newlist.js','./js/ui/add.js', './js/ui/round.js',
-  './js/ui/words.js', './js/ui/examples.js', './js/examples.js', './js/ui/practice.js', './js/ui/settings.js',
+  './js/ui/words.js', './js/ui/examples.js', './js/examples.js', './js/ui/practice.js', './js/ui/settings.js', './js/ui/blog.js',
+  './img/mindmap-1.jpg', './img/mindmap-2.jpg', './img/v1-home.png', './img/v1-add.png', './img/final-home.jpg', './img/final-newlist.jpg',
 ];
 
 self.addEventListener('install', (e) => {
