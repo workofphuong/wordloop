@@ -40,7 +40,7 @@ export function renderBlog() {
       [h('strong', null, 'Who is it for? '), 'Language learners.'],
       [h('strong', null, 'What is it for? '), 'Helping people remember new words faster and for longer through enough exposure. The science behind it is spaced repetition and active recall.'],
       [h('strong', null, 'Constraints '), '(the part I started liking a lot): limiting the number of possible options.'])),
-    p('The final step before mapping out and building is a deep conversation with AI. I do this every time, before I build anything. I want to think things through thoroughly before AI starts throwing tons of information at me and I lose sight of my original intention.'),
+    p('The final step before mapping out and building is a deep conversation with AI. I do this every time, before I build anything. I want to think things through thoroughly before AI starts throwing tons of information at me and I lose sight of my original intention. The logic behind that conversation is a design tree: I start from the core questions above, then work down the branches one decision at a time, settling each big decision before the smaller choices that depend on it.'),
 
     step(2, 'Mapping the user journey'),
     p('The most interesting thing I found about building a web app is how structured and logical it needs to be. I love structuring things by nature. I’ve been mind-mapping and systemizing my learning since primary school. These are the sketches I made before building: a quick first map on a note card, then a cleaner flow in my notebook.'),
